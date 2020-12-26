@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum ToasterPossion {
+    case top, bottom, middle
+}
