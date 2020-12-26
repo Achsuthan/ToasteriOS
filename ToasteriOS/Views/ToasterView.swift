@@ -21,14 +21,14 @@ public class ToasterView: UIView {
     var lblTitle: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .white
+        label.textColor = .green
         return label
     }()
     
     var lblMessage: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .green
+        label.textColor = .white
         return label
     }()
     
