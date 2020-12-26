@@ -18,8 +18,6 @@
 		0C0841C82597516F00A8FFEB /* ToasterPossion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841C72597516F00A8FFEB /* ToasterPossion.swift */; };
 		0C0841D4259751B100A8FFEB /* ShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841D3259751B100A8FFEB /* ShowMessage.swift */; };
 		0C0841DB2597522A00A8FFEB /* ToasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841DA2597522A00A8FFEB /* ToasterView.swift */; };
-		0C0841E12597589900A8FFEB /* ToasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841DA2597522A00A8FFEB /* ToasterView.swift */; };
-		0C0841E7259758F200A8FFEB /* ShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841D3259751B100A8FFEB /* ShowMessage.swift */; };
 		0C416C1325974F8F00A26690 /* ToasteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C416C0925974F8E00A26690 /* ToasteriOS.framework */; };
 		0C416C1825974F8F00A26690 /* ToasteriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C416C1725974F8F00A26690 /* ToasteriOSTests.swift */; };
 		0C416C1A25974F8F00A26690 /* ToasteriOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C416C0C25974F8E00A26690 /* ToasteriOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -199,8 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				0C0841C52597514500A8FFEB /* Views */,
-				0C0841C42597513C00A8FFEB /* Extentions  */,
 				0C0841C32597511A00A8FFEB /* Enum */,
+				0C0841C42597513C00A8FFEB /* Extentions  */,
 				0C416C0C25974F8E00A26690 /* ToasteriOS.h */,
 				0C416C0D25974F8E00A26690 /* Info.plist */,
 			);
@@ -417,8 +415,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C0841952597507600A8FFEB /* ViewController.swift in Sources */,
-				0C0841E12597589900A8FFEB /* ToasterView.swift in Sources */,
-				0C0841E7259758F200A8FFEB /* ShowMessage.swift in Sources */,
 				0C0841912597507600A8FFEB /* AppDelegate.swift in Sources */,
 				0C0841932597507600A8FFEB /* SceneDelegate.swift in Sources */,
 			);
