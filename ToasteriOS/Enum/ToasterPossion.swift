@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum ToasterPossion {
+public enum ToasterPossion {
     case top, bottom, middle
 }
