@@ -24,7 +24,9 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC This plugin is fully customizable toaster message for iPhone and iPad DESC
+  spec.description  = <<-DESC 
+                      This plugin is fully customizable toaster message for iPhone and iPad 
+  DESC
 
   spec.homepage     = "https://github.com/Achsuthan/ToasteriOS"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
