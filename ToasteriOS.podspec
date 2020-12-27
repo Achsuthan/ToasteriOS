@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ToasteriOS"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "Fully customizable toaster message for iPhone and iPad"
 
   # This description is used to generate tags and improve search results.
