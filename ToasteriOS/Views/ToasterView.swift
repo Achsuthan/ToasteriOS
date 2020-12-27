@@ -33,6 +33,7 @@ public class ToasterView: UIView {
     }()
     
     var vc: UIViewController?
+    var toasterPossion: ToasterPossion = .top
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -53,13 +54,16 @@ public class ToasterView: UIView {
     
     private func setUpToasterView(in vc: UIViewController){
         vc.view.addSubview(self.viewBackground)
-//        if 1 == 0 {
-//            self.viewBackground.topAnchor.constraint(equalTo: vc.view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
-//        }
-//        else {
-//            self.viewBackground.bottomAnchor.constraint(equalTo: vc.view.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive = true
-//        }
-        self.viewBackground.bottomAnchor.constraint(equalTo: vc.view.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive = true
+        switch self.toasterPossion {
+        case .top:
+            self.viewBackground.topAnchor.constraint(equalTo: vc.view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
+        case .bottom:
+            self.viewBackground.bottomAnchor.constraint(equalTo: vc.view.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive = true
+        case .middle:
+            self.viewBackground.centerXAnchor.constraint(equalTo: vc.view.centerXAnchor).isActive = true
+            self.viewBackground.centerYAnchor.constraint(equalTo: vc.view.centerYAnchor).isActive = true
+        }
+        
         self.viewBackground.widthAnchor.constraint(lessThanOrEqualTo: vc.view.widthAnchor, multiplier: 0.88).isActive = true
         self.viewBackground.centerXAnchor.constraint(equalTo: vc.view.centerXAnchor).isActive = true
         let tmp = self.viewBackground.heightAnchor.constraint(lessThanOrEqualToConstant: 100)
@@ -83,9 +87,34 @@ public class ToasterView: UIView {
         self.lblMessage.bottomAnchor.constraint(equalTo: self.viewBackground.bottomAnchor, constant: -10).isActive = true
     }
     
-    func showMessage(_ title: String?, _ message: String?, vc: UIViewController){
+    func showToaster(_ title: String?, _ message: String?, vc: UIViewController){
         
         self.vc = vc
+        self.setUp()
+        if let title = title {
+            self.lblTitle.text = title
+        }
+        
+        if let message = message {
+            self.lblMessage.text = message
+        }
+        
+        UIView.animate(withDuration: 1, delay: 0.1, options: .curveLinear) {
+            self.viewBackground.alpha = 1
+        } completion: { (completion) in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                if ((self.vc?.view.isDescendant(of: self.viewBackground)) != nil){
+                    self.viewBackground.removeFromSuperview()
+                }
+            }
+        }
+        
+    }
+    
+    func showToaster(_ title: String?, _ message: String?,_ possion: ToasterPossion? ,vc: UIViewController){
+        
+        self.vc = vc
+        self.toasterPossion = possion ?? .top
         self.setUp()
         if let title = title {
             self.lblTitle.text = title
