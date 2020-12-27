@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.viewToasterView("Success", "Hello World!")
+        self.showToaster("Success", "Hello World!", .middle)
     }
 
 
