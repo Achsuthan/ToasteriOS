@@ -16,11 +16,14 @@
 		0C0841A82597507800A8FFEB /* ToasteriOSExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841A72597507800A8FFEB /* ToasteriOSExamplesTests.swift */; };
 		0C0841B32597507900A8FFEB /* ToasteriOSExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841B22597507900A8FFEB /* ToasteriOSExamplesUITests.swift */; };
 		0C0841C82597516F00A8FFEB /* ToasterPossion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841C72597516F00A8FFEB /* ToasterPossion.swift */; };
-		0C0841D4259751B100A8FFEB /* ShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841D3259751B100A8FFEB /* ShowMessage.swift */; };
 		0C0841DB2597522A00A8FFEB /* ToasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841DA2597522A00A8FFEB /* ToasterView.swift */; };
 		0C416C1325974F8F00A26690 /* ToasteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C416C0925974F8E00A26690 /* ToasteriOS.framework */; };
 		0C416C1825974F8F00A26690 /* ToasteriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C416C1725974F8F00A26690 /* ToasteriOSTests.swift */; };
 		0C416C1A25974F8F00A26690 /* ToasteriOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C416C0C25974F8E00A26690 /* ToasteriOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CA52551259875AE004B6F88 /* ShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841D3259751B100A8FFEB /* ShowMessage.swift */; };
+		0CFB3A1625986A83008431A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841942597507600A8FFEB /* ViewController.swift */; };
+		0CFB3A6325986ADA008431A4 /* ShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841D3259751B100A8FFEB /* ShowMessage.swift */; };
+		0CFB3A6925986AE1008431A4 /* ToasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841DA2597522A00A8FFEB /* ToasterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -416,6 +419,8 @@
 			files = (
 				0C0841952597507600A8FFEB /* ViewController.swift in Sources */,
 				0C0841912597507600A8FFEB /* AppDelegate.swift in Sources */,
+				0CFB3A6925986AE1008431A4 /* ToasterView.swift in Sources */,
+				0CFB3A6325986ADA008431A4 /* ShowMessage.swift in Sources */,
 				0C0841932597507600A8FFEB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,8 +445,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C0841D4259751B100A8FFEB /* ShowMessage.swift in Sources */,
 				0C0841C82597516F00A8FFEB /* ToasterPossion.swift in Sources */,
+				0CFB3A1625986A83008431A4 /* ViewController.swift in Sources */,
+				0CA52551259875AE004B6F88 /* ShowMessage.swift in Sources */,
 				0C0841DB2597522A00A8FFEB /* ToasterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8H9WUUCH6;
 				INFOPLIST_FILE = ToasteriOSExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,6 +528,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8H9WUUCH6;
 				INFOPLIST_FILE = ToasteriOSExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -750,6 +758,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ToasteriOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -759,6 +768,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = achsuthan.ToasteriOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -777,6 +787,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ToasteriOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -786,6 +797,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = achsuthan.ToasteriOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
