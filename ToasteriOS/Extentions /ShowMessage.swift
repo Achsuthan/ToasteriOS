@@ -13,7 +13,7 @@ public extension UIViewController {
         toaster.showToaster(title, message, vc: self)
     }
     
-    func showToaster(_ title: String?, _ message: String?, _ possion: ToasterPossion?){
+    func showToaster(_ title: String?, _ message: String?, _ possion: ToasterPosition?){
         let toaster = ToasterView()
         toaster.showToaster(title, message, possion, vc: self)
     }

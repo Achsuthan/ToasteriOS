@@ -15,13 +15,13 @@
 		0C08419D2597507800A8FFEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C08419B2597507800A8FFEB /* LaunchScreen.storyboard */; };
 		0C0841A82597507800A8FFEB /* ToasteriOSExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841A72597507800A8FFEB /* ToasteriOSExamplesTests.swift */; };
 		0C0841B32597507900A8FFEB /* ToasteriOSExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841B22597507900A8FFEB /* ToasteriOSExamplesUITests.swift */; };
-		0C0841C82597516F00A8FFEB /* ToasterPossion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841C72597516F00A8FFEB /* ToasterPossion.swift */; };
 		0C0841DB2597522A00A8FFEB /* ToasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841DA2597522A00A8FFEB /* ToasterView.swift */; };
 		0C416C1325974F8F00A26690 /* ToasteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C416C0925974F8E00A26690 /* ToasteriOS.framework */; };
 		0C416C1825974F8F00A26690 /* ToasteriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C416C1725974F8F00A26690 /* ToasteriOSTests.swift */; };
 		0C416C1A25974F8F00A26690 /* ToasteriOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C416C0C25974F8E00A26690 /* ToasteriOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CA52551259875AE004B6F88 /* ShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841D3259751B100A8FFEB /* ShowMessage.swift */; };
-		0CA527FC25988F34004B6F88 /* ToasterPossion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841C72597516F00A8FFEB /* ToasterPossion.swift */; };
+		0CA52803259891A8004B6F88 /* ToasterPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA52802259891A8004B6F88 /* ToasterPosition.swift */; };
+		0CA5280E259891F6004B6F88 /* ToasterPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA52802259891A8004B6F88 /* ToasterPosition.swift */; };
 		0CFB3A1625986A83008431A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841942597507600A8FFEB /* ViewController.swift */; };
 		0CFB3A6325986ADA008431A4 /* ShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841D3259751B100A8FFEB /* ShowMessage.swift */; };
 		0CFB3A6925986AE1008431A4 /* ToasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841DA2597522A00A8FFEB /* ToasterView.swift */; };
@@ -66,7 +66,6 @@
 		0C0841AE2597507800A8FFEB /* ToasteriOSExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToasteriOSExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C0841B22597507900A8FFEB /* ToasteriOSExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasteriOSExamplesUITests.swift; sourceTree = "<group>"; };
 		0C0841B42597507900A8FFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C0841C72597516F00A8FFEB /* ToasterPossion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasterPossion.swift; sourceTree = "<group>"; };
 		0C0841D3259751B100A8FFEB /* ShowMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMessage.swift; sourceTree = "<group>"; };
 		0C0841DA2597522A00A8FFEB /* ToasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasterView.swift; sourceTree = "<group>"; };
 		0C416C0925974F8E00A26690 /* ToasteriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToasteriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +74,7 @@
 		0C416C1225974F8F00A26690 /* ToasteriOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToasteriOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C416C1725974F8F00A26690 /* ToasteriOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasteriOSTests.swift; sourceTree = "<group>"; };
 		0C416C1925974F8F00A26690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CA52802259891A8004B6F88 /* ToasterPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasterPosition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,7 @@
 		0C0841C32597511A00A8FFEB /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				0C0841C72597516F00A8FFEB /* ToasterPossion.swift */,
+				0CA52802259891A8004B6F88 /* ToasterPosition.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -422,8 +422,8 @@
 				0C0841912597507600A8FFEB /* AppDelegate.swift in Sources */,
 				0CFB3A6925986AE1008431A4 /* ToasterView.swift in Sources */,
 				0CFB3A6325986ADA008431A4 /* ShowMessage.swift in Sources */,
-				0CA527FC25988F34004B6F88 /* ToasterPossion.swift in Sources */,
 				0C0841932597507600A8FFEB /* SceneDelegate.swift in Sources */,
+				0CA5280E259891F6004B6F88 /* ToasterPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,9 +447,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C0841C82597516F00A8FFEB /* ToasterPossion.swift in Sources */,
 				0CFB3A1625986A83008431A4 /* ViewController.swift in Sources */,
 				0CA52551259875AE004B6F88 /* ShowMessage.swift in Sources */,
+				0CA52803259891A8004B6F88 /* ToasterPosition.swift in Sources */,
 				0C0841DB2597522A00A8FFEB /* ToasterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

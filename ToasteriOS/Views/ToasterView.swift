@@ -33,7 +33,7 @@ public class ToasterView: UIView {
     }()
     
     var vc: UIViewController?
-    var toasterPossion: ToasterPossion = .top
+    var toasterPossion: ToasterPosition = .top
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -111,7 +111,7 @@ public class ToasterView: UIView {
         
     }
     
-    func showToaster(_ title: String?, _ message: String?,_ possion: ToasterPossion? ,vc: UIViewController){
+    func showToaster(_ title: String?, _ message: String?,_ possion: ToasterPosition? ,vc: UIViewController){
         
         self.vc = vc
         self.toasterPossion = possion ?? .top
