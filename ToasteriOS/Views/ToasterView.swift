@@ -111,10 +111,10 @@ public class ToasterView: UIView {
         
     }
     
-    func showToaster(_ title: String?, _ message: String?,_ possion: ToasterPosition? ,vc: UIViewController){
+    func showToaster(_ title: String?, _ message: String?,_ position: ToasterPosition? ,vc: UIViewController){
         
         self.vc = vc
-        self.toasterPossion = possion ?? .top
+        self.toasterPossion = position ?? .top
         self.setUp()
         if let title = title {
             self.lblTitle.text = title
