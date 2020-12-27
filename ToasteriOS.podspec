@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ToasteriOS"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.9"
   spec.summary      = "Fully customizable toaster message for iPhone and iPad"
 
   # This description is used to generate tags and improve search results.
@@ -64,6 +64,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
+  spec.swift_version = "4.0"
   # spec.platform     = :ios
   # spec.platform     = :ios, "5.0"
 
@@ -91,7 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "ToasteriOS/**/*.{h,m, swift}"
+  spec.source_files  = "ToasteriOS/**/*.{h,m,swift}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"

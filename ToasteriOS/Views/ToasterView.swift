@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+@available(iOS 11.0, *)
 public class ToasterView: UIView {
     //MARK:- Components
     let viewBackground: UIView = {
@@ -53,12 +53,13 @@ public class ToasterView: UIView {
     
     private func setUpToasterView(in vc: UIViewController){
         vc.view.addSubview(self.viewBackground)
-        if 1 == 0 {
-            self.viewBackground.topAnchor.constraint(equalTo: vc.view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
-        }
-        else {
-            self.viewBackground.bottomAnchor.constraint(equalTo: vc.view.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive = true
-        }
+//        if 1 == 0 {
+//            self.viewBackground.topAnchor.constraint(equalTo: vc.view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
+//        }
+//        else {
+//            self.viewBackground.bottomAnchor.constraint(equalTo: vc.view.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive = true
+//        }
+        self.viewBackground.bottomAnchor.constraint(equalTo: vc.view.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive = true
         self.viewBackground.widthAnchor.constraint(lessThanOrEqualTo: vc.view.widthAnchor, multiplier: 0.88).isActive = true
         self.viewBackground.centerXAnchor.constraint(equalTo: vc.view.centerXAnchor).isActive = true
         let tmp = self.viewBackground.heightAnchor.constraint(lessThanOrEqualToConstant: 100)
