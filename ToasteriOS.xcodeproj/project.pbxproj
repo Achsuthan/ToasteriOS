@@ -22,6 +22,8 @@
 		0CA52551259875AE004B6F88 /* ShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841D3259751B100A8FFEB /* ShowMessage.swift */; };
 		0CA52803259891A8004B6F88 /* ToasterPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA52802259891A8004B6F88 /* ToasterPosition.swift */; };
 		0CA5280E259891F6004B6F88 /* ToasterPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA52802259891A8004B6F88 /* ToasterPosition.swift */; };
+		0CA52815259893AA004B6F88 /* ToasterStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA52814259893AA004B6F88 /* ToasterStyle.swift */; };
+		0CA5281B25989416004B6F88 /* ToasterStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA52814259893AA004B6F88 /* ToasterStyle.swift */; };
 		0CFB3A1625986A83008431A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841942597507600A8FFEB /* ViewController.swift */; };
 		0CFB3A6325986ADA008431A4 /* ShowMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841D3259751B100A8FFEB /* ShowMessage.swift */; };
 		0CFB3A6925986AE1008431A4 /* ToasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841DA2597522A00A8FFEB /* ToasterView.swift */; };
@@ -75,6 +77,7 @@
 		0C416C1725974F8F00A26690 /* ToasteriOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasteriOSTests.swift; sourceTree = "<group>"; };
 		0C416C1925974F8F00A26690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CA52802259891A8004B6F88 /* ToasterPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasterPosition.swift; sourceTree = "<group>"; };
+		0CA52814259893AA004B6F88 /* ToasterStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasterStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				0CA52802259891A8004B6F88 /* ToasterPosition.swift */,
+				0CA52814259893AA004B6F88 /* ToasterStyle.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -422,6 +426,7 @@
 				0C0841912597507600A8FFEB /* AppDelegate.swift in Sources */,
 				0CFB3A6925986AE1008431A4 /* ToasterView.swift in Sources */,
 				0CFB3A6325986ADA008431A4 /* ShowMessage.swift in Sources */,
+				0CA5281B25989416004B6F88 /* ToasterStyle.swift in Sources */,
 				0C0841932597507600A8FFEB /* SceneDelegate.swift in Sources */,
 				0CA5280E259891F6004B6F88 /* ToasterPosition.swift in Sources */,
 			);
@@ -448,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CFB3A1625986A83008431A4 /* ViewController.swift in Sources */,
+				0CA52815259893AA004B6F88 /* ToasterStyle.swift in Sources */,
 				0CA52551259875AE004B6F88 /* ShowMessage.swift in Sources */,
 				0CA52803259891A8004B6F88 /* ToasterPosition.swift in Sources */,
 				0C0841DB2597522A00A8FFEB /* ToasterView.swift in Sources */,
