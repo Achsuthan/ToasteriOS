@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ToasteriOS"
-  spec.version      = "0.0.9"
+  spec.version      = "0.0.10"
   spec.summary      = "Fully customizable toaster message for iPhone and iPad"
 
   # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
   DESC
 
   spec.homepage     = "https://github.com/Achsuthan/ToasteriOS"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  spec.screenshots  = "https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/tableList.png", "https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/TitleOnly.png", "https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/TitleWithStyle.png", "https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/TitleAndMessage.png", "https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/TittleAndMessageWithCustomStyle.png", "https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/CustomBackground.png", "https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/ToasterOnTop.png", "https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/ToasterOnMiddle.png", "https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/ToasterOnBottom.png"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
