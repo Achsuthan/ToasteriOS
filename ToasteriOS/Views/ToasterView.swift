@@ -34,6 +34,7 @@ public class ToasterView: UIView {
     
     private var vc: UIViewController?
     private var toasterPossion: ToasterPosition = .top
+    private var delay: Int = 4
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -134,12 +135,16 @@ public class ToasterView: UIView {
             if let cornerRadius = backgroundStyle.cornerRadius {
                 self.viewBackground.layer.cornerRadius = CGFloat(cornerRadius)
             }
+            
+            if let delay = backgroundStyle.delay {
+                self.delay = delay > 3 ? delay : 4
+            }
         }
         
-        UIView.animate(withDuration: 1, delay: 0.1, options: .curveLinear) {
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear) {
             self.viewBackground.alpha = 1
         } completion: { (completion) in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + DispatchTimeInterval.seconds(self.delay)) {
                 if ((self.vc?.view.isDescendant(of: self.viewBackground)) != nil){
                     self.viewBackground.removeFromSuperview()
                 }
