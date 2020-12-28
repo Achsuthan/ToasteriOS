@@ -16,6 +16,7 @@
 		0C0841A82597507800A8FFEB /* ToasteriOSExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841A72597507800A8FFEB /* ToasteriOSExamplesTests.swift */; };
 		0C0841B32597507900A8FFEB /* ToasteriOSExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841B22597507900A8FFEB /* ToasteriOSExamplesUITests.swift */; };
 		0C0841DB2597522A00A8FFEB /* ToasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0841DA2597522A00A8FFEB /* ToasterView.swift */; };
+		0C37CCAA2599AC8E00836985 /* ToasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C37CCA92599AC8E00836985 /* ToasterTableViewCell.swift */; };
 		0C416C1325974F8F00A26690 /* ToasteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C416C0925974F8E00A26690 /* ToasteriOS.framework */; };
 		0C416C1825974F8F00A26690 /* ToasteriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C416C1725974F8F00A26690 /* ToasteriOSTests.swift */; };
 		0C416C1A25974F8F00A26690 /* ToasteriOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C416C0C25974F8E00A26690 /* ToasteriOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -70,6 +71,7 @@
 		0C0841B42597507900A8FFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C0841D3259751B100A8FFEB /* ShowMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMessage.swift; sourceTree = "<group>"; };
 		0C0841DA2597522A00A8FFEB /* ToasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasterView.swift; sourceTree = "<group>"; };
+		0C37CCA92599AC8E00836985 /* ToasterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToasterTableViewCell.swift; sourceTree = "<group>"; };
 		0C416C0925974F8E00A26690 /* ToasteriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToasteriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C416C0C25974F8E00A26690 /* ToasteriOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToasteriOS.h; sourceTree = "<group>"; };
 		0C416C0D25974F8E00A26690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		0C08418F2597507600A8FFEB /* ToasteriOSExamples */ = {
 			isa = PBXGroup;
 			children = (
+				0C37CCA82599AC7C00836985 /* Components */,
 				0C0841902597507600A8FFEB /* AppDelegate.swift */,
 				0C0841922597507600A8FFEB /* SceneDelegate.swift */,
 				0C0841942597507600A8FFEB /* ViewController.swift */,
@@ -175,6 +178,14 @@
 				0C0841DA2597522A00A8FFEB /* ToasterView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0C37CCA82599AC7C00836985 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0C37CCA92599AC8E00836985 /* ToasterTableViewCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		0C416BFF25974F8D00A26690 = {
@@ -424,6 +435,7 @@
 			files = (
 				0C0841952597507600A8FFEB /* ViewController.swift in Sources */,
 				0C0841912597507600A8FFEB /* AppDelegate.swift in Sources */,
+				0C37CCAA2599AC8E00836985 /* ToasterTableViewCell.swift in Sources */,
 				0CFB3A6925986AE1008431A4 /* ToasterView.swift in Sources */,
 				0CFB3A6325986ADA008431A4 /* ShowMessage.swift in Sources */,
 				0CA5281B25989416004B6F88 /* ToasterStyle.swift in Sources */,
