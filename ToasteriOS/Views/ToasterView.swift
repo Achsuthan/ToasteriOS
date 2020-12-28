@@ -9,7 +9,7 @@ import UIKit
 @available(iOS 11.0, *)
 public class ToasterView: UIView {
     //MARK:- Components
-    let viewBackground: UIView = {
+    private let viewBackground: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .black
@@ -18,22 +18,22 @@ public class ToasterView: UIView {
         return view
     }()
     
-    var lblTitle: UILabel = {
+    private var lblTitle: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .green
         return label
     }()
     
-    var lblMessage: UILabel = {
+    private var lblMessage: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
         return label
     }()
     
-    var vc: UIViewController?
-    var toasterPossion: ToasterPosition = .top
+    private var vc: UIViewController?
+    private var toasterPossion: ToasterPosition = .top
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -87,32 +87,7 @@ public class ToasterView: UIView {
         self.lblMessage.bottomAnchor.constraint(equalTo: self.viewBackground.bottomAnchor, constant: -10).isActive = true
     }
     
-    func showToaster(_ title: String?, _ message: String?, vc: UIViewController){
-        
-        self.vc = vc
-        self.setUp()
-        if let title = title {
-            self.lblTitle.text = title
-        }
-        
-        if let message = message {
-            self.lblMessage.text = message
-        }
-        
-        UIView.animate(withDuration: 1, delay: 0.1, options: .curveLinear) {
-            self.viewBackground.alpha = 1
-        } completion: { (completion) in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-                if ((self.vc?.view.isDescendant(of: self.viewBackground)) != nil){
-                    self.viewBackground.removeFromSuperview()
-                }
-            }
-        }
-        
-    }
-    
-    func showToaster(_ title: String?, _ message: String?,_ position: ToasterPosition? ,vc: UIViewController){
-        
+    public func showToaster(_ title: String? = "", _ message: String? = "", _ position: ToasterPosition? = .top, vc: UIViewController, _ titleStyle: ToasterMessageStyle? = nil, _ messageStyle: ToasterMessageStyle? = nil, _ toasterBacgroundStyle: ToasterBackgroundStyle? = nil){
         self.vc = vc
         self.toasterPossion = position ?? .top
         self.setUp()
@@ -123,6 +98,43 @@ public class ToasterView: UIView {
         if let message = message {
             self.lblMessage.text = message
         }
+        if let titleStyle = titleStyle {
+            if let font  = titleStyle.font {
+                self.lblTitle.font = font
+            }
+            
+            if let textColor = titleStyle.textColor {
+                self.lblTitle.textColor = textColor
+            }
+            
+            if let alignment = titleStyle.textAlignment {
+                self.lblTitle.textAlignment = alignment
+            }
+        }
+        
+        if let messageStyle = messageStyle {
+            if let font  = messageStyle.font {
+                self.lblMessage.font = font
+            }
+            
+            if let textColor = messageStyle.textColor {
+                self.lblMessage.textColor = textColor
+            }
+            
+            if let alignment = messageStyle.textAlignment {
+                self.lblMessage.textAlignment = alignment
+            }
+        }
+        
+        if let backgroundStyle = toasterBacgroundStyle {
+            if let bacgroundColor = backgroundStyle.backgroundColor {
+                self.viewBackground.backgroundColor = bacgroundColor
+            }
+            
+            if let cornerRadius = backgroundStyle.cornerRadius {
+                self.viewBackground.layer.cornerRadius = CGFloat(cornerRadius)
+            }
+        }
         
         UIView.animate(withDuration: 1, delay: 0.1, options: .curveLinear) {
             self.viewBackground.alpha = 1
@@ -133,7 +145,6 @@ public class ToasterView: UIView {
                 }
             }
         }
-        
     }
 }
 
