@@ -3,13 +3,17 @@ Fully customized and lightweight toaster message for iOS. This plugin is easy to
 
 ## Screenshots
 
-| Options | Tittle only | Tittle with custom style | Title and Message | Tittle and Message with custom style
-| ------ | ------ | ------| ------| ------|
-| ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/tableList.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/TitleOnly.png?raw=true)| ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/TitleWithStyle.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/TitleAndMessage.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/TittleAndMessageWithCustomStyle.png?raw=true) 
+| Options | Tittle only | Tittle with custom style 
+| ------ | ------ | ------|
+| ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/tableList.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/TitleOnly.png?raw=true)| ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/TitleWithStyle.png?raw=true) 
 
-| Custom toaster background | Toaster on Top| Toaster on middle | Toaster on bottom 
-| ------ | ------ | ------| ------|
-| ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/CustomBackground.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/ToasterOnTop.png?raw=true)| ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/ToasterOnMiddle.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/ToasterOnBottom.png?raw=true)  
+| Tittle and Message | Tittle and Message with custom style | Custom toaster background
+| ------ | ------ | ------ |
+| ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/TitleAndMessage.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/TittleAndMessageWithCustomStyle.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/CustomBackground.png?raw=true) 
+
+ | Toaster on Top| Toaster on middle | Toaster on bottom 
+ | ------ | ------| ------|
+| ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/ToasterOnTop.png?raw=true)| ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/ToasterOnMiddle.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/blob/main/screenshots/ToasterOnBottom.png?raw=true)  
 
 ## Setup Instructions
 # [Cocoapods](https://cocoapods.org)
@@ -84,6 +88,4 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
 ```
