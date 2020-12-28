@@ -35,10 +35,10 @@ class ViewController: UIViewController {
     
     private func setUp(){
         
-        self.toasterOptionArray.append(toasterOptions(title: "Title Only", type: .titleOnly))
-        self.toasterOptionArray.append(toasterOptions(title: "Title with style", type: .titleWithStyle))
-        self.toasterOptionArray.append(toasterOptions(title: "Title and Message", type: .titleWithMessage))
-        self.toasterOptionArray.append(toasterOptions(title: "Title and Message with custom style", type: .titleWithMessageStyle))
+        self.toasterOptionArray.append(toasterOptions(title: "Tittle Only", type: .titleOnly))
+        self.toasterOptionArray.append(toasterOptions(title: "Tittle with style", type: .titleWithStyle))
+        self.toasterOptionArray.append(toasterOptions(title: "Tittle and Message", type: .titleWithMessage))
+        self.toasterOptionArray.append(toasterOptions(title: "Tittle and Message with custom style", type: .titleWithMessageStyle))
         self.toasterOptionArray.append(toasterOptions(title: "Custom Toaster background", type: .customToasterBackground))
         self.toasterOptionArray.append(toasterOptions(title: "Show Toaster on top", type: .topToaster))
         self.toasterOptionArray.append(toasterOptions(title: "Show Toaster on middle", type: .MiddleToaster))
