@@ -13,7 +13,7 @@ public struct ToasterMessageStyle {
     var textAlignment: NSTextAlignment?
 }
 
-public struct ToasterStyle {
+public struct ToasterBackgroundStyle {
     var backgroundColor: UIColor?
     var cornerRadius: Double?
 }
