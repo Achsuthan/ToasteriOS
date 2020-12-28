@@ -8,14 +8,9 @@
 import UIKit
 @available(iOS 11.0, *)
 public extension UIViewController {
-    func showToaster(_ title: String?, _ message: String?){
+    func showToaster(title: String? = "", message: String? = "", position: ToasterPosition? = .top, titleStyle: ToasterMessageStyle? = nil, messageStyle: ToasterMessageStyle? = nil, toasterBacgroundStyle: ToasterBackgroundStyle? = nil){
         let toaster = ToasterView()
-        toaster.showToaster(title, message, vc: self)
-    }
-    
-    func showToaster(_ title: String?, _ message: String?, _ position: ToasterPosition?){
-        let toaster = ToasterView()
-        toaster.showToaster(title, message, position, vc: self)
+        toaster.showToaster(title, message, position, vc: self, titleStyle, messageStyle, toasterBacgroundStyle)
     }
 }
 
