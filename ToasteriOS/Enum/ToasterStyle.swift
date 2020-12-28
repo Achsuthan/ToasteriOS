@@ -16,4 +16,5 @@ public struct ToasterMessageStyle {
 public struct ToasterBackgroundStyle {
     var backgroundColor: UIColor?
     var cornerRadius: Double?
+    var delay: Int?
 }
