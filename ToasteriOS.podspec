@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ToasteriOS"
-  spec.version      = "0.0.11"
-  spec.summary      = "Fully customizable toaster message for iPhone and iPad"
+  spec.version      = "0.0.12"
+  spec.summary      = "Fully customizable toaster message for iOS"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC 
-                      This plugin is fully customizable toaster message for iPhone and iPad 
+  Fully customized and lightweight toaster message for iOS. This plugin is easy to use in swift code and with one line of code we can trigger the toaster message. 
   DESC
 
   spec.homepage     = "https://github.com/Achsuthan/ToasteriOS"
