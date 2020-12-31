@@ -8,13 +8,13 @@
 import UIKit
 
 public struct ToasterMessageStyle {
-    var font: UIFont?
-    var textColor: UIColor?
-    var textAlignment: NSTextAlignment?
+    public var font: UIFont?
+    public var textColor: UIColor?
+    public var textAlignment: NSTextAlignment?
 }
 
 public struct ToasterBackgroundStyle {
-    var backgroundColor: UIColor?
-    var cornerRadius: Double?
-    var delay: Int?
+    public var backgroundColor: UIColor?
+    public var cornerRadius: Double?
+    public var delay: Int?
 }
