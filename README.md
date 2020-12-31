@@ -18,7 +18,7 @@ Fully customized and lightweight toaster message for iOS. This plugin is easy to
 ## Setup Instructions
 # [Cocoapods](https://cocoapods.org)
 
-To integrate Toast-Swift into your Xcode project using CocoaPods, specify it in your ``` Podfile  ```:
+To integrate ToasteriOS into your Xcode project using CocoaPods, specify it in your ``` Podfile  ```:
 ``` sh
 pod 'ToasteriOS'
 ```
@@ -38,7 +38,7 @@ self.showToaster(title: "Success", message: "Hello World!", position: .middle)
 
 ## Few More aditional customization
 
-If you want to make more customize the style of title, message and toster background view here are some steps for to do.
+If you want to make more customize the style of title/message/toster background view, here are some steps for to do.
 
 ```swift
 //Custom style message
