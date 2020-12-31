@@ -1,6 +1,8 @@
 # ToasteriOS
 Fully customized and lightweight toaster message for iOS. This plugin is easy to use in swift code and with one line of code we can trigger the toaster message.
 
+![Cocoapods](https://img.shields.io/cocoapods/v/ToasteriOS) ![Cocoapods platforms](https://img.shields.io/cocoapods/p/ToasteriOS)
+
 ## Screenshots
 
 | Options | Tittle only | Tittle with custom style 
