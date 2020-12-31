@@ -26,6 +26,7 @@ public struct ToasterMessageStyle {
     public var font: UIFont?
     public var textColor: UIColor?
     public var textAlignment: NSTextAlignment?
+    public init() {}
 }
 
 
@@ -47,4 +48,5 @@ public struct ToasterBackgroundStyle {
     public var backgroundColor: UIColor?
     public var cornerRadius: Double?
     public var delay: Int?
+    public init() {}
 }

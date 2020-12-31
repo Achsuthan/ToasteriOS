@@ -29,8 +29,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUp()
-        self.showToaster(title: "Success", message: "Hello World!", position: .middle)
-        self.showToaster(title: "Success", message: "Hello World!", position: .bottom, titleStyle: ToasterMessageStyle(font: UIFont.systemFont(ofSize: 24, weight: .bold), textColor: .red, textAlignment: .center), messageStyle: ToasterMessageStyle(font: UIFont.systemFont(ofSize: 20, weight: .heavy), textColor: .white, textAlignment: .center), toasterBacgroundStyle: ToasterBackgroundStyle(backgroundColor: .black, cornerRadius: 10))
     }
     
     private func setUp(){
@@ -80,15 +78,32 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         case .bottomToaster:
             self.showToaster(title: "Success", message: "Hello World!", position: .bottom)
         case .customToasterBackground:
-            self.showToaster(title: "Success", message: "Hello World!", position: .bottom, titleStyle: nil, messageStyle: nil, toasterBacgroundStyle: ToasterBackgroundStyle(backgroundColor: .blue, cornerRadius: 10, delay: 5))
+            var backgroundStyle  = ToasterBackgroundStyle()
+            backgroundStyle.backgroundColor = .blue
+            backgroundStyle.cornerRadius = 10
+            backgroundStyle.delay = 5
+            self.showToaster(title: "Success", message: "Hello World!", position: .bottom, titleStyle: nil, messageStyle: nil, toasterBacgroundStyle: backgroundStyle)
         case .titleOnly:
             self.showToaster(title: "Success")
         case .titleWithMessage:
             self.showToaster(title: "Success", message: "Hello World!")
         case .titleWithStyle:
-            self.showToaster(title: "Success", message: nil, position: nil, titleStyle: ToasterMessageStyle(font: UIFont.systemFont(ofSize: 24, weight: .bold), textColor: .green, textAlignment: .center))
+            var titleStyle  = ToasterMessageStyle()
+            titleStyle.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+            titleStyle.textColor = .green
+            titleStyle.textAlignment = .center
+            self.showToaster(title: "Success", message: nil, position: nil, titleStyle: titleStyle)
         case .titleWithMessageStyle:
-            self.showToaster(title: "Success", message: "Hello World!", position: nil, titleStyle: ToasterMessageStyle(font: UIFont.systemFont(ofSize: 24, weight: .bold), textColor: .red, textAlignment: .center), messageStyle: ToasterMessageStyle(font: UIFont.systemFont(ofSize: 20, weight: .heavy), textColor: .white, textAlignment: .center))
+            var titleStyle  = ToasterMessageStyle()
+            titleStyle.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+            titleStyle.textColor = .red
+            titleStyle.textAlignment = .center
+            
+            var messageStyle  = ToasterMessageStyle()
+            messageStyle.font = UIFont.systemFont(ofSize: 20, weight: .heavy)
+            messageStyle.textColor = .white
+            messageStyle.textAlignment = .center
+            self.showToaster(title: "Success", message: "Hello World!", position: nil, titleStyle: titleStyle, messageStyle: messageStyle)
         }
     }
     
