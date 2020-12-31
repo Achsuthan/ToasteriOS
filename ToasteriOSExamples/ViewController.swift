@@ -68,8 +68,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected Index \(indexPath.row)")
-        
         switch self.toasterOptionArray[indexPath.row].type {
         case .MiddleToaster:
             self.showToaster(title: "Success", message: "Hello World!", position: .middle)
