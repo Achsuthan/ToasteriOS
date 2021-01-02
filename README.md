@@ -19,7 +19,7 @@ Fully customized and lightweight toaster message for iOS. This plugin is easy to
 
  | Show Toaster with Image | Toaster with custom style Image | - 
  | ------ | ------| ------|
-| ![Alt text](./screenshots/ToasterMessageWithImage.png?raw=true)| ![Alt text](./screenshots/ToasterMessageWithCustomStyleImage.ong?raw=true) | - 
+| ![Alt text](./screenshots/ToasterMessageWithImage.png?raw=true)| ![Alt text](./screenshots/ToasterMessageWithCustomStyleImage.png?raw=true) | - 
 
 ## Setup Instructions
 # [Cocoapods](https://cocoapods.org)
