@@ -28,9 +28,9 @@ public extension UIViewController {
         Achsuthan Mahendran
      */
     
-    func showToaster(title: String? = "", message: String? = "", position: ToasterPosition? = .top, titleStyle: ToasterMessageStyle? = nil, messageStyle: ToasterMessageStyle? = nil, toasterBacgroundStyle: ToasterBackgroundStyle? = nil){
+    func showToaster(title: String? = "", message: String? = "", position: ToasterPosition? = .top, titleStyle: ToasterMessageStyle? = nil, messageStyle: ToasterMessageStyle? = nil, toasterBacgroundStyle: ToasterBackgroundStyle? = nil, isWithImage: Bool? = false, toasterImage: UIImage? = nil, toasterSquareImageWidth: Double? = 40){
         let toaster = ToasterView()
-        toaster.showToaster(title, message, position, vc: self, titleStyle, messageStyle, toasterBacgroundStyle)
+        toaster.showToaster(title, message, position, vc: self, titleStyle, messageStyle, toasterBacgroundStyle, isWithImage: isWithImage, toasterImage: toasterImage, toasterSquareImageWidth: toasterSquareImageWidth)
     }
 }
 
