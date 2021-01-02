@@ -67,7 +67,7 @@ backgroundStyle.delay = 6
 //Can show the toaster message with above custom style 
 self.showToaster(title: "success", message: "Hello World!", position: .top, titleStyle: titleStyle, messageStyle: messageStyle, toasterBacgroundStyle: backgroundStyle)
 
-//Can show the toaster message with above custom style and with the image with style
+//Can show the toaster message with above custom style and image with style
 self.showToaster(title: "success", message: "Hello World!", position: .top, titleStyle: titleStyle, messageStyle: messageStyle, toasterBacgroundStyle: backgroundStyle, isWithImage: true, toasterImage: #imageLiteral(resourceName: "success"), toasterSquareImageWidth: 80)
 ```
 
