@@ -8,7 +8,7 @@
 import UIKit
 
 enum optionEnum {
-    case titleOnly, titleWithStyle, titleWithMessage, titleWithMessageStyle, customToasterBackground, topToaster, MiddleToaster, bottomToaster
+    case titleOnly, titleWithStyle, titleWithMessage, titleWithMessageStyle, customToasterBackground, topToaster, MiddleToaster, bottomToaster, toasterWithImage, customToasterImageSize
 }
 
 struct toasterOptions {
@@ -41,6 +41,8 @@ class ViewController: UIViewController {
         self.toasterOptionArray.append(toasterOptions(title: "Show Toaster on top", type: .topToaster))
         self.toasterOptionArray.append(toasterOptions(title: "Show Toaster on middle", type: .MiddleToaster))
         self.toasterOptionArray.append(toasterOptions(title: "Show Toaster on bottom", type: .bottomToaster))
+        self.toasterOptionArray.append(toasterOptions(title: "Show toaster with image", type: .toasterWithImage))
+        self.toasterOptionArray.append(toasterOptions(title: "Toaster image with custom syle", type: .customToasterImageSize))
         
         self.view.addSubview(self.toastertabel)
         self.toastertabel.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
@@ -102,6 +104,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             messageStyle.textColor = .white
             messageStyle.textAlignment = .center
             self.showToaster(title: "Success", message: "Hello World!", position: nil, titleStyle: titleStyle, messageStyle: messageStyle)
+        case .toasterWithImage:
+            self.showToaster(title: "Success", message: "Hello World!", position: nil, titleStyle: nil, messageStyle: nil, toasterBacgroundStyle: nil, isWithImage: true, toasterImage: #imageLiteral(resourceName: "success"))
+        case .customToasterImageSize:
+            self.showToaster(title: "Success", message: "Custom image size needs to have message/title based on the image size", position: nil, titleStyle: nil, messageStyle: nil, toasterBacgroundStyle: nil, isWithImage: true, toasterImage: #imageLiteral(resourceName: "success"), toasterSquareImageWidth: 80)
         }
     }
     
