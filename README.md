@@ -3,6 +3,11 @@ Fully customized and lightweight toaster message for iOS. This plugin is easy to
 
 ![Cocoapods](https://img.shields.io/cocoapods/v/ToasteriOS) ![Cocoapods platforms](https://img.shields.io/cocoapods/p/ToasteriOS)
 
+## New features 
+- Bug fixed on the multile toaster message and title 
+- Now can show the toaster message with image 
+- Customize the size of the toaster message image
+
 ## Screenshots
 
 | Options | Tittle only | Tittle with custom style 
@@ -67,7 +72,7 @@ backgroundStyle.delay = 6
 //Can show the toaster message with above custom style 
 self.showToaster(title: "success", message: "Hello World!", position: .top, titleStyle: titleStyle, messageStyle: messageStyle, toasterBacgroundStyle: backgroundStyle)
 
-//Can show the toaster message with above custom style and image with style
+//Can show the toaster message with above custom style and with the image with style
 self.showToaster(title: "success", message: "Hello World!", position: .top, titleStyle: titleStyle, messageStyle: messageStyle, toasterBacgroundStyle: backgroundStyle, isWithImage: true, toasterImage: #imageLiteral(resourceName: "success"), toasterSquareImageWidth: 80)
 ```
 
