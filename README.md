@@ -4,8 +4,8 @@ Fully customized and lightweight toaster message for iOS. This plugin is easy to
 ![Cocoapods](https://img.shields.io/cocoapods/v/ToasteriOS) ![Cocoapods platforms](https://img.shields.io/cocoapods/p/ToasteriOS)
 
 ## New features 
-- Bug fixed on the multile toaster message and title 
-- Now can show the toaster message with image 
+- Bug fixed on the multiple toaster message and title 
+- Now can show the toaster message with an image 
 - Customize the size of the toaster message image
 
 ## Screenshots
