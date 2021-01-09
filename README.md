@@ -12,19 +12,19 @@ Fully customized and lightweight toaster message for iOS. This plugin is easy to
 
 | Options | Tittle only | Tittle with custom style 
 | ------ | ------ | ------|
-| ![Alt text](./screenshots/tableList.png?raw=true) | ![Alt text](./screenshots/TitleOnly.png?raw=true)| ![Alt text](./screenshots/TitleWithStyle.png?raw=true) 
+| ![Alt text](https://github.com/Achsuthan/ToasteriOS/tree/main/screenshots/tableList.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/tree/main/screenshots/TitleOnly.png?raw=true)| ![Alt text](https://github.com/Achsuthan/ToasteriOS/tree/main/screenshots/TitleWithStyle.png?raw=true) 
 
 | Tittle and Message | Tittle and Message with custom style | Custom toaster background
 | ------ | ------ | ------ |
-| ![Alt text](./screenshots/TitleAndMessage.png?raw=true) | ![Alt text](./screenshots/TittleAndMessageWithCustomStyle.png?raw=true) | ![Alt text](./screenshots/CustomBackground.png?raw=true) 
+| ![Alt text](https://github.com/Achsuthan/ToasteriOS/tree/main/screenshots/TitleAndMessage.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/tree/main/screenshots/TittleAndMessageWithCustomStyle.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/tree/main/screenshots/CustomBackground.png?raw=true) 
 
  | Toaster on Top| Toaster on middle | Toaster on bottom 
  | ------ | ------| ------|
-| ![Alt text](./screenshots/ToasterOnTop.png?raw=true)| ![Alt text](./screenshots/ToasterOnMiddle.png?raw=true) | ![Alt text](./screenshots/ToasterOnBottom.png?raw=true)  
+| ![Alt text](https://github.com/Achsuthan/ToasteriOS/tree/main/screenshots/ToasterOnTop.png?raw=true)| ![Alt text](https://github.com/Achsuthan/ToasteriOS/tree/main/screenshots/ToasterOnMiddle.png?raw=true) | ![Alt text](https://github.com/Achsuthan/ToasteriOS/tree/main/screenshots/ToasterOnBottom.png?raw=true)  
 
  | Show Toaster with Image | Toaster with custom style Image | - 
  | ------ | ------| ------|
-| ![Alt text](./screenshots/ToasterMessageWithImage.png?raw=true)| ![Alt text](./screenshots/ToasterMessageWithCustomStyleImage.png?raw=true) | - 
+| ![Alt text](https://github.com/Achsuthan/ToasteriOS/tree/main/screenshots/ToasterMessageWithImage.png?raw=true)| ![Alt text](https://github.com/Achsuthan/ToasteriOS/tree/main/screenshots/ToasterMessageWithCustomStyleImage.png?raw=true) | - 
 
 ## Setup Instructions
 # [Cocoapods](https://cocoapods.org)
